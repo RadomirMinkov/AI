@@ -271,15 +271,15 @@ int main()
 
         currentZeroPosition = findZeroPosition();
 
-        //cout << "Starting the clock!" << std::endl;
-        //auto start = std::chrono::high_resolution_clock::now();
+        cout << "Starting the clock!" << std::endl;
+        auto start = std::chrono::high_resolution_clock::now();
         idaStarAlgorithm();
-        //auto stop = std::chrono::high_resolution_clock::now();
-        //cout << "Stopped the clock!" << std::endl;
+        auto stop = std::chrono::high_resolution_clock::now();
+        cout << "Stopped the clock!" << std::endl;
 
-//        auto duration = std::chrono::duration_cast<std::chrono::microseconds>(stop - start);
+        auto duration = std::chrono::duration_cast<std::chrono::microseconds>(stop - start);
 
-//        cout << "The algorithm time is: " << duration.count()/ 1000 << " microseconds!" << std::endl;
+        cout << "The algorithm time is: " << duration.count()/ 1000 << " microseconds!" << std::endl;
     }
     else
     {
